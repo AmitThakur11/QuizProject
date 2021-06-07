@@ -6,7 +6,6 @@ export const  QuizListComponent = ()=>{
     <div className = "quiz-list">
       {
         quizes.map((quiz)=>{
-          console.log(quiz.quizImage);
           return <div className = "quiz" key = {quiz.id}>
             <div className = "quiz-image"><img  src = {quiz.quizImage} alt = "processing"/></div>
             <div className = "quiz-title">{quiz.quizName}</div>
