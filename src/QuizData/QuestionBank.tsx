@@ -4,22 +4,24 @@ export type Options = {
   isRight : boolean
 }
 
-export type  Question = {
+export type  Questions = {
   question : string ,
-  points : number,
+  point : number,
   negativePoints : number ,
-  option  : Options[]
+  options  : Options[]
 }
 
 export type Quizes = {
-  quizName : string ;
-  questions : Question[]
+  id : number ,
+  quizName : string ,
+  questions : Questions[]
   
 
-}
+}[]
 
-export const quizes = [
-  { quizName : "Quiz One",
+export const quizes : Quizes = [
+  { id : 1 ,
+    quizName : "Quiz One",
     questions : [
         {
           question : "Question number 1",
@@ -253,8 +255,10 @@ export const quizes = [
         }
   ]
   },
-  { QuizName : "Quiz Two",
-  questions : [
+  { 
+    id : 2 ,
+    quizName : "Quiz Two",
+    questions : [
       {
         question : "Question number 1",
         point : 10,
@@ -487,8 +491,10 @@ export const quizes = [
       }
 ]
   },
-  { QuizName : "Quiz Three",
-  questions : [
+  { 
+    id : 3 ,
+    quizName : "Quiz Three",
+    questions : [
       {
         question : "Question number 1",
         point : 10,

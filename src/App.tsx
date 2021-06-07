@@ -1,10 +1,11 @@
 import "./styles.css";
-import {QuizInterface} from "./Components/QuizInterface"
+import {QuizComponent} from "./Components/QuizComponent"
 export default function App() {
   return (
     <div className="App">
       <h1>Hello CodeSandbox</h1>
-      <QuizInterface/>
+      <QuizComponent/>
+      
     </div>
   );
 }
