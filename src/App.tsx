@@ -1,10 +1,9 @@
 import "./styles.css";
-import {QuizComponent} from "./Components/QuizComponent"
+import {QuizListComponent} from "./Components/QuizListComponent"
 export default function App() {
   return (
     <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <QuizComponent/>
+      <QuizListComponent/>
       
     </div>
   );
