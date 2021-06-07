@@ -1,7 +1,7 @@
 
 
 
-export const  QuizComponent = ()=>{
+export const  QuizComponent = ({props})=>{
   return(
     <div>
       {
