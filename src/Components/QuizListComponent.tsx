@@ -1,7 +1,8 @@
 import  "../CSScomponents/QuizListComponent.css"
-import {quizes} from "../QuizData/QuestionBank"
+import {useQuiz} from "../Context/quizContext";
 import {Link } from "react-router-dom"
 export const  QuizListComponent = ()=>{
+  const {quizes} = useQuiz()
   return(
     <div className = "quiz-list">
       {

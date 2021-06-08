@@ -1,9 +1,11 @@
+
 export type Options = {
   option : string ,
   isRight : boolean
 }
 
 export type  Questions = {
+  id : number,
   question : string ,
   point : number,
   negativePoints : number ,
@@ -24,7 +26,7 @@ export const quizes : Quizes = [
     quizImage : "https://i.ibb.co/MCc7R7Q/rocket.png" ,
     quizName : "SPACE",
     questions : [
-        {
+        { id :1 ,
           question : "Question number 1",
           point : 10,
           negativePoints :2,
@@ -48,6 +50,7 @@ export const quizes : Quizes = [
           ]
         },
         {
+          id : 2,
           question : "Question number 2",
           point : 10,
           negativePoints :2,
@@ -70,7 +73,7 @@ export const quizes : Quizes = [
             },
           ]
         },
-        {
+        { id : 3,
           question : "Question number 3",
           point : 10,
           negativePoints :2,
@@ -94,6 +97,7 @@ export const quizes : Quizes = [
           ]
         },
         {
+          id :4,
           question : "Question number 4",
           point : 10,
           negativePoints :2,
@@ -117,6 +121,7 @@ export const quizes : Quizes = [
           ]
         },
         {
+          id :5 ,
           question : "Question number 5",
           point : 10,
           negativePoints :2,
@@ -140,6 +145,7 @@ export const quizes : Quizes = [
           ]
         },
         {
+          id : 6,
           question : "Question number 6",
           point : 10,
           negativePoints :2,
@@ -163,6 +169,7 @@ export const quizes : Quizes = [
           ]
         },
         {
+          id :7,
           question : "Question number 7",
           point : 10,
           negativePoints :2,
@@ -186,6 +193,7 @@ export const quizes : Quizes = [
           ]
         },
         {
+          id :8,
           question : "Question number 8",
           point : 10,
           negativePoints :2,
@@ -209,6 +217,7 @@ export const quizes : Quizes = [
           ]
         },
         {
+          id :9,
           question : "Question number 9",
           point : 10,
           negativePoints :2,
@@ -232,6 +241,7 @@ export const quizes : Quizes = [
           ]
         },
         {
+          id : 10,
           question : "Question number 10",
           point : 10,
           negativePoints :2,
@@ -262,6 +272,7 @@ export const quizes : Quizes = [
     quizName : "MYTHOLOGY",
     questions : [
       {
+        id : 1 ,
         question : "Question number 1",
         point : 10,
         negativePoints :2,
@@ -285,6 +296,7 @@ export const quizes : Quizes = [
         ]
       },
       {
+        id : 2,
         question : "Question number 2",
         point : 10,
         negativePoints :2,
@@ -308,6 +320,7 @@ export const quizes : Quizes = [
         ]
       },
       {
+        id :3,
         question : "Question number 3",
         point : 10,
         negativePoints :2,
@@ -331,6 +344,7 @@ export const quizes : Quizes = [
         ]
       },
       {
+        id :4,
         question : "Question number 4",
         point : 10,
         negativePoints :2,
@@ -354,6 +368,7 @@ export const quizes : Quizes = [
         ]
       },
       {
+        id :5,
         question : "Question number 5",
         point : 10,
         negativePoints :2,
@@ -377,6 +392,7 @@ export const quizes : Quizes = [
         ]
       },
       {
+        id :6,
         question : "Question number 6",
         point : 10,
         negativePoints :2,
@@ -400,6 +416,7 @@ export const quizes : Quizes = [
         ]
       },
       {
+        id : 7,
         question : "Question number 7",
         point : 10,
         negativePoints :2,
@@ -423,6 +440,7 @@ export const quizes : Quizes = [
         ]
       },
       {
+        id :8,
         question : "Question number 8",
         point : 10,
         negativePoints :2,
@@ -445,7 +463,7 @@ export const quizes : Quizes = [
           },
         ]
       },
-      {
+      { id :9,
         question : "Question number 9",
         point : 10,
         negativePoints :2,
@@ -469,6 +487,7 @@ export const quizes : Quizes = [
         ]
       },
       {
+        id : 10,
         question : "Question number 10",
         point : 10,
         negativePoints :2,
@@ -499,6 +518,7 @@ export const quizes : Quizes = [
     quizName : "SOCIAL MEDIA",
     questions : [
       {
+        id : 1,
         question : "Question number 1",
         point : 10,
         negativePoints :2,
@@ -522,6 +542,7 @@ export const quizes : Quizes = [
         ]
       },
       {
+        id :2,
         question : "Question number 2",
         point : 10,
         negativePoints :2,
@@ -545,6 +566,7 @@ export const quizes : Quizes = [
         ]
       },
       {
+        id :3,
         question : "Question number 3",
         point : 10,
         negativePoints :2,
@@ -568,6 +590,7 @@ export const quizes : Quizes = [
         ]
       },
       {
+        id : 4,
         question : "Question number 4",
         point : 10,
         negativePoints :2,
@@ -591,6 +614,7 @@ export const quizes : Quizes = [
         ]
       },
       {
+        id : 5,
         question : "Question number 5",
         point : 10,
         negativePoints :2,
@@ -614,6 +638,7 @@ export const quizes : Quizes = [
         ]
       },
       {
+        id :6,
         question : "Question number 6",
         point : 10,
         negativePoints :2,
@@ -637,6 +662,7 @@ export const quizes : Quizes = [
         ]
       },
       {
+        id :7,
         question : "Question number 7",
         point : 10,
         negativePoints :2,
@@ -660,6 +686,7 @@ export const quizes : Quizes = [
         ]
       },
       {
+        id : 8,
         question : "Question number 8",
         point : 10,
         negativePoints :2,
@@ -683,6 +710,7 @@ export const quizes : Quizes = [
         ]
       },
       {
+        id :9,
         question : "Question number 9",
         point : 10,
         negativePoints :2,
@@ -706,6 +734,7 @@ export const quizes : Quizes = [
         ]
       },
       {
+        id : 10,
         question : "Question number 10",
         point : 10,
         negativePoints :2,
