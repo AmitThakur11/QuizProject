@@ -1,9 +1,10 @@
 import {OptionContainer} from "./OptionContainer"
 import {useParams} from "react-router-dom";
-import {useState} from "react";
+import {useQuiz} from "../Context/quizContext";
+import {TotalCard} from "../Components/TotalCard"
 export const QuestionCard = ({quizes})=>{
   const {id} = useParams();
-  const [count , setCount] = useState(1)
+  const {count , setCount} = useQuiz()
   return(
     <div >
         {
@@ -12,19 +13,20 @@ export const QuestionCard = ({quizes})=>{
               <h1 className = "question-card title">{quiz.quizName}</h1>
               <div>{
                 quiz.questions.map(({question,options,id})=>{
-                  return(<>
+                  return(
+                  <>
                      {id === count &&<div className = "question-card">
-                      <div className = "question">{question}</div>
-                      <OptionContainer options = {options} />
-                      
-                    </div>}
-                    
-                  </>)
-
+                            <div className = "question">{question}</div>
+                            <OptionContainer options = {options} />
+                          </div>
+                      }
+                  </>
+                  )
                 })
-                
-                
-              }<button onClick = {()=>setCount(count + 1)}>Submit</button></div>
+              }
+              {count > quiz.questions.length && <TotalCard/>}
+              {count < quiz.questions.length+1 && <button onClick ={()=>setCount(count+1)}>Next</button>}
+            </div>
 
               </div>}
             </div>

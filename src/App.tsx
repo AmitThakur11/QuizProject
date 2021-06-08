@@ -3,13 +3,12 @@ import React from "react";
 import "./styles.css";
 import menu  from "./svg/menu.svg";
 import logo from './svg/brain.svg'
-import {Routes,Route , useParams} from 'react-router-dom'
+import {Routes,Route,Link , useParams} from 'react-router-dom'
 
 import {useState} from "react";
 import {QuizListComponent} from "./Components/QuizListComponent";
 import {QuizContainer} from "./Components/QuizContainer";
 export default function App() {
-  const {id} = useParams();
   const [showSideBar , setSideBar] = useState(true)
   const displaySideBar = ():void=>{
     setSideBar(!showSideBar)
@@ -21,7 +20,7 @@ export default function App() {
       <nav></nav> 
     <div className = {!showSideBar?"side-bar active" : "side-bar"} >
       <div><img src = {logo} width={"100px"} alt = "processing"/></div>
-      <div className = "side-bar-items">HOME</div>
+      <div onClick = {()=>displaySideBar()} className = "side-bar-items"><Link to ="/" >HOME</Link></div>
       <div className = "side-bar-items">LEADER BOARD</div>
       <div className = "side-bar-items">ABOUT</div>
     </div>
