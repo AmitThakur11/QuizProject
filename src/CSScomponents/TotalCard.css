@@ -1,0 +1,10 @@
+.total-card{
+  height:50vh;
+  background-color:teal;
+  font-weight: 500;
+  font-size:48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+}
